@@ -10,12 +10,15 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <main className='py-3'>
-          <Routes>
-            <Route path='/' element={<HomeScreen />} exact />
-            <Route path='/product/:id' element={<ProductScreen />} />
-          </Routes>
-      </main>
+      <Container>
+        <main className='py-3'>
+            <Routes>
+              <Route path='/' element={<HomeScreen />} exact />
+              <Route path='/product/:id' element={<ProductScreen />} />
+            </Routes>
+        </main>
+      </Container>
+
       <Footer />
     </Router>
 
