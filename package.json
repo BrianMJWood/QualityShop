@@ -1,0 +1,30 @@
+{
+  "name": "qualityshop",
+  "version": "1.0.0",
+  "description": "MERN Shopping App",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix clientUI",
+    "dev": "concurrently \"npm run server\" \"npm run client\"" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrianMJWood/QualityShop.git"
+  },
+  "author": "Brian Wood",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrianMJWood/QualityShop/issues"
+  },
+  "homepage": "https://github.com/BrianMJWood/QualityShop#readme",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
